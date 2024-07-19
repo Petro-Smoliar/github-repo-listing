@@ -7,6 +7,6 @@ import lombok.Data;
 public class Repository {
     private String name;
     private Owner owner;
-    private Boolean fork;
+    private boolean fork;
     private List<Branch> branches;
 }
