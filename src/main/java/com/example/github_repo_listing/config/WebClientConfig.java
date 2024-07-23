@@ -8,10 +8,13 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Configuration
 public class WebClientConfig {
 
+    @Value("${github.api.url}")
+    private String baseUrl;
+
     @Bean
     public WebClient webClient() {
         return WebClient.builder()
-                .baseUrl("https://api.github.com")
+                .baseUrl(baseUrl)
                 .build();
     }
 }
