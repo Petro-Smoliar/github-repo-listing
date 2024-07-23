@@ -1,0 +1,6 @@
+*.war
+*.zip
+*.tar.gz
+*.iml
+.idea
+*.log
